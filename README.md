@@ -1,4 +1,4 @@
-# WezTerm for Windows setup
+# WezTerm Configuration for Windows setup
 
 ```ps1
 vim .wezterm.lua

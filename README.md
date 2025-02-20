@@ -73,5 +73,11 @@ config.colors = {
   cursor_border = '#0CFF93',
 }
 
+-- Font settings for tabs
+config.window_frame = {
+  font = require('wezterm').font 'Bahnschrift',
+  font_size = 12,
+}
+
 return config
 ```

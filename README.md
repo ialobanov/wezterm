@@ -66,6 +66,7 @@ config.wsl_domains = {
   },
 }
 
+-- Cursor color
 config.colors = {
   cursor_bg = '#0CFF93',
   cursor_fg = 'black',

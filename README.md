@@ -10,6 +10,7 @@ local wezterm = require 'wezterm'
 local mux = wezterm.mux
 local config = {}
 
+-- Colors & perfomance
 config.term = "xterm-256color"
 config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"

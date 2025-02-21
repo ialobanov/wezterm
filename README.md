@@ -30,7 +30,7 @@ config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 20.0
 
 -- WezTerm theme
-config.color_scheme = 'Fishtank (Gogh)'
+config.color_scheme = 'rebecca'
 
 -- Disable audio
 config.audible_bell = 'Disabled'

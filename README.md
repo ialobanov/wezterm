@@ -22,7 +22,7 @@ wezterm.on("gui-startup", function()
 end)
 
 -- PowerShell by default shell
-config.default_prog = { 'pwsh' }
+config.default_prog = { 'pwsh', '-NoLogo' }
 
 -- Font settings
 config.font = wezterm.font 'JetBrains Mono' 

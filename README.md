@@ -16,10 +16,9 @@ config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
 
 -- Maximaze on start up
-wezterm.on('gui-startup', function(window)
-  local tab, pane, window = mux.spawn_window(cmd or {})
-  local gui_window = window:gui_window();
-  gui_window:maximize()
+wezterm.on("gui-startup", function()
+  local tab, pane, window = mux.spawn_window{}
+  window:gui_window():maximize()
 end)
 
 -- PowerShell by default shell

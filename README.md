@@ -51,7 +51,7 @@ config.mouse_bindings = {
     mods = 'NONE',
     action = wezterm.action.PasteFrom 'PrimarySelection',
   },
-  -- Open links CTRL + Left button click
+  -- Open links with CTRL + Left button click
   {
     event = { Up = { streak = 1, button = 'Left' } },
     mods = 'CTRL',

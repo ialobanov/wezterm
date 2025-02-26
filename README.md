@@ -28,7 +28,7 @@ config.default_prog = { 'pwsh', '-NoLogo' }
 config.window_padding = {
   left = 20,
   right = 12,
-  top = 6,
+  top = 16,
   bottom = 6,
 }
 

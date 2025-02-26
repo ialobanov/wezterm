@@ -34,7 +34,7 @@ config.color_scheme = 'rebecca'
 -- Disable audio notifications
 config.audible_bell = 'Disabled'
 
--- Copy by Mouse Left button selection text and paste by Right button click
+-- Select text with the left mouse button and paste with a right-click
 config.mouse_bindings = {
   {
     event = { Up = { streak = 1, button = 'Left' } },

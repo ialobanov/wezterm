@@ -24,6 +24,14 @@ end)
 -- Set PowerShell as the default shell
 config.default_prog = { 'pwsh', '-NoLogo' }
 
+-- Set window paddings
+config.window_padding = {
+  left = 20,
+  right = 12,
+  top = 6,
+  bottom = 6,
+}
+
 -- Font settings
 config.font = wezterm.font 'JetBrainsMono Nerd Font Mono'
 config.font_size = 20.0

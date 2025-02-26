@@ -31,7 +31,7 @@ config.font_size = 20.0
 -- WezTerm theme
 config.color_scheme = 'rebecca'
 
--- Disable audio
+-- Disable audio notifications
 config.audible_bell = 'Disabled'
 
 -- Copy by Mouse Left button selection text and paste by Right button click 

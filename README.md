@@ -11,12 +11,12 @@ local mux = wezterm.mux
 local config = {}
 
 -- Colors & perfomance
-config.term = "xterm-256color"
-config.front_end = "WebGpu"
-config.webgpu_power_preference = "HighPerformance"
+config.term = 'xterm-256color'
+config.front_end = 'WebGpu'
+config.webgpu_power_preference = 'HighPerformance'
 
 -- Maximaze on start up
-wezterm.on("gui-startup", function()
+wezterm.on('gui-startup', function()
   local tab, pane, window = mux.spawn_window{}
   window:gui_window():maximize()
 end)
@@ -25,7 +25,7 @@ end)
 config.default_prog = { 'pwsh', '-NoLogo' }
 
 -- Font settings
-config.font = wezterm.font 'JetBrains Mono'
+config.font = wezterm.font 'JetBrainsMono Nerd Font Mono'
 config.font_size = 20.0
 
 -- WezTerm theme
@@ -63,7 +63,7 @@ config.wsl_domains = {
   {
     name = 'WSL:Ubuntu-24.04.1',
     distribution = 'Ubuntu-24.04.1',
-    username = "techadmin",
+    username = 'techadmin',
   },
 }
 

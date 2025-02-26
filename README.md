@@ -21,7 +21,7 @@ wezterm.on('gui-startup', function()
   window:gui_window():maximize()
 end)
 
--- PowerShell by default shell
+-- Set PowerShell as the default shell
 config.default_prog = { 'pwsh', '-NoLogo' }
 
 -- Font settings

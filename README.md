@@ -17,7 +17,7 @@ config.webgpu_power_preference = 'HighPerformance'
 
 -- Maximaze on start up
 wezterm.on('gui-startup', function()
-  local tab, pane, window = mux.spawn_window{}
+  local tab, pane, window = mux.spawn_window {}
   window:gui_window():maximize()
 end)
 
@@ -34,29 +34,29 @@ config.color_scheme = 'rebecca'
 -- Disable audio notifications
 config.audible_bell = 'Disabled'
 
--- Copy by Mouse Left button selection text and paste by Right button click 
+-- Copy by Mouse Left button selection text and paste by Right button click
 config.mouse_bindings = {
-    {
-      event = { Up = { streak = 1, button = 'Left' } },
-      mods = 'NONE',
-      action = wezterm.action.CompleteSelection 'Clipboard',
-    },
-    {
-      event = { Up = { streak = 1, button = 'Right' } },
-      mods = 'NONE',
-      action = wezterm.action.PasteFrom 'Clipboard',
-    },
-    {
-      event = { Up = { streak = 1, button = 'Right' } },
-      mods = 'NONE',
-      action = wezterm.action.PasteFrom 'PrimarySelection',
-    },
-    -- Open links CTRL + Left button click
-    {
-      event = { Up = { streak = 1, button = 'Left' } },
-      mods = 'CTRL',
-      action = wezterm.action.OpenLinkAtMouseCursor,
-    },
+  {
+    event = { Up = { streak = 1, button = 'Left' } },
+    mods = 'NONE',
+    action = wezterm.action.CompleteSelection 'Clipboard',
+  },
+  {
+    event = { Up = { streak = 1, button = 'Right' } },
+    mods = 'NONE',
+    action = wezterm.action.PasteFrom 'Clipboard',
+  },
+  {
+    event = { Up = { streak = 1, button = 'Right' } },
+    mods = 'NONE',
+    action = wezterm.action.PasteFrom 'PrimarySelection',
+  },
+  -- Open links CTRL + Left button click
+  {
+    event = { Up = { streak = 1, button = 'Left' } },
+    mods = 'CTRL',
+    action = wezterm.action.OpenLinkAtMouseCursor,
+  },
 }
 
 config.wsl_domains = {
@@ -77,8 +77,9 @@ config.colors = {
 -- Font settings for tabs
 config.window_frame = {
   font = require('wezterm').font 'Bahnschrift',
-  font_size = 14,
+  font_size = 13,
 }
 
 return config
+
 ```

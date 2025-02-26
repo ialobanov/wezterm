@@ -25,7 +25,7 @@ end)
 config.default_prog = { 'pwsh', '-NoLogo' }
 
 -- Font settings
-config.font = wezterm.font 'JetBrains Mono' 
+config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 20.0
 
 -- WezTerm theme

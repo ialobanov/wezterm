@@ -77,7 +77,7 @@ config.colors = {
 -- Font settings for tabs
 config.window_frame = {
   font = require('wezterm').font 'Bahnschrift',
-  font_size = 12,
+  font_size = 14,
 }
 
 return config

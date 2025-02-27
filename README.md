@@ -15,14 +15,14 @@ config.term = 'xterm-256color'
 config.front_end = 'WebGpu'
 config.webgpu_power_preference = 'HighPerformance'
 
--- Default path
-config.default_cwd = '~'
-
 -- Maximaze on start up
 wezterm.on('gui-startup', function()
   local tab, pane, window = mux.spawn_window {}
   window:gui_window():maximize()
 end)
+
+-- Default path
+config.default_cwd = '~'
 
 -- Set PowerShell as the default shell
 config.default_prog = { 'pwsh', '-NoLogo' }

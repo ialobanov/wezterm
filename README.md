@@ -70,6 +70,7 @@ config.mouse_bindings = {
   },
 }
 
+-- Windows WSL
 config.wsl_domains = {
   {
     name = 'WSL:Ubuntu-24.04.1',

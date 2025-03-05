@@ -27,6 +27,9 @@ config.default_cwd = '~'
 -- Set PowerShell as the default shell
 config.default_prog = { 'pwsh', '-NoLogo' }
 
+-- For right paste in different terminals
+config.canonicalize_pasted_newlines = "LineFeed"
+
 -- Set window paddings
 config.window_padding = {
   left = 20,

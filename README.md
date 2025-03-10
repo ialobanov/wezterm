@@ -82,11 +82,13 @@ config.wsl_domains = {
   },
 }
 
--- Cursor color
+-- Cursor style and colors
+config.default_cursor_style = 'SteadyUnderline'
+config.cursor_thickness = 3
 config.colors = {
-  cursor_bg = '#0CFF93',
+  cursor_bg = '#05f5b5',
   cursor_fg = 'black',
-  cursor_border = '#0CFF93',
+  cursor_border = '#05f5b5',
 }
 
 -- Font settings for tabs

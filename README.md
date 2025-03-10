@@ -33,14 +33,14 @@ config.canonicalize_pasted_newlines = "LineFeed"
 -- Set window paddings
 config.window_padding = {
   left = 20,
-  right = 12,
+  right = 22,
   top = 16,
   bottom = 6,
 }
 
 -- Font settings
 config.font = wezterm.font 'JetBrainsMono Nerd Font Mono'
-config.font_size = 20.0
+config.font_size = 22.0
 
 -- WezTerm theme
 config.color_scheme = 'rebecca'
@@ -73,7 +73,6 @@ config.mouse_bindings = {
   },
 }
 
--- Windows WSL
 config.wsl_domains = {
   {
     name = 'WSL:Ubuntu-24.04.1',
@@ -95,6 +94,15 @@ config.colors = {
 config.window_frame = {
   font = require('wezterm').font 'Bahnschrift',
   font_size = 14,
+}
+
+-- Closes tabs without confirm and add keymap
+config.keys = {
+  {
+    key = 'w',
+    mods = 'CTRL',
+    action = wezterm.action.CloseCurrentTab { confirm = false },
+  },
 }
 
 return config

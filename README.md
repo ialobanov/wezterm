@@ -85,9 +85,9 @@ config.wsl_domains = {
 config.default_cursor_style = 'SteadyUnderline'
 config.cursor_thickness = 3
 config.colors = {
-  cursor_bg = '#BA9D00',
+  cursor_bg = '#E6C200',
   cursor_fg = 'black',
-  cursor_border = '#BA9D00',
+  cursor_border = '#E6C200',
 }
 
 -- Font settings for tabs

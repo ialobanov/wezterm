@@ -42,8 +42,40 @@ config.window_padding = {
 config.font = wezterm.font 'JetBrainsMono Nerd Font Mono'
 config.font_size = 22.0
 
--- WezTerm theme
+-- WezTerm color theme
 config.color_scheme = 'rebecca'
+config.color_schemes = {
+  ['rebecca'] = {
+    ansi = {
+     "#12131e",
+     "#dd7755",
+     "#04dbb5",
+     "#FFC300",
+     "#7aa5ff",
+     "#bf9cf9",
+     "#56d3c2",
+     "#e4e3e9",
+     },
+     background = "#292a44",
+     brights = {
+      "#666699",
+      "#ff92cd",
+      "#01eac0",
+      "#FFC300",
+      "#69c0fa",
+      "#c17ff8",
+      "#8bfde1",
+      "#f4f2f9",
+     },
+     cursor_bg = "#b89bf9",
+     cursor_border = "#b89bf9",
+     cursor_fg = "#292a44",
+     foreground = "#e8e6ed",
+     indexed = {},
+     selection_bg = "#663399",
+     selection_fg = "#f4f2f9",
+    },
+}
 
 -- Disable audio notifications
 config.audible_bell = 'Disabled'
@@ -82,13 +114,12 @@ config.wsl_domains = {
 }
 
 -- Cursor style and colors
-config.default_cursor_style = 'SteadyUnderline'
-config.cursor_thickness = 3
-config.colors = {
-  cursor_bg = '#E6C200',
-  cursor_fg = 'black',
-  cursor_border = '#E6C200',
-}
+config.default_cursor_style = 'SteadyBlock'
+-- config.colors = {
+--   cursor_bg = '#D4D62F',
+--   cursor_fg = 'black',
+--   cursor_border = '#D4D62F',
+-- }
 
 -- Font settings for tabs
 config.window_frame = {

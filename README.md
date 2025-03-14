@@ -1,4 +1,10 @@
-# WezTerm Configuration for Windows setup
+# WezTerm Configuration
+
+## Windows
+
+```powershell
+winget install --id wez.wezterm -e --source winget
+```
 
 ```ps1
 vim .wezterm.lua

@@ -21,6 +21,10 @@ wezterm.on('gui-startup', function()
   window:gui_window():maximize()
 end)
 
+-- Hide OS panel and disable confirmation for close terminal
+config.window_decorations = "RESIZE"
+config.window_close_confirmation = 'NeverPrompt'
+
 -- Default path
 config.default_cwd = '~'
 
@@ -133,6 +137,16 @@ config.keys = {
     key = 'w',
     mods = 'CTRL',
     action = wezterm.action.CloseCurrentTab { confirm = false },
+  },
+  {
+    key = 't',
+    mods = 'CTRL',
+    action = wezterm.action.SpawnTab 'CurrentPaneDomain',
+  },
+  {
+    key = 'q',
+    mods = 'CTRL',
+    action = wezterm.action.QuitApplication,
   },
 }
 

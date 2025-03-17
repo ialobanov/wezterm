@@ -147,7 +147,7 @@ config.keys = {
   {
     key = 't',
     mods = 'CTRL',
-    action = wezterm.action.SpawnTab 'CurrentPaneDomain',
+    action = wezterm.action.SpawnTab 'DefaultDomain',
   },
   {
     key = 'q',

@@ -125,11 +125,11 @@ config.wsl_domains = {
 
 -- Cursor style and colors
 config.default_cursor_style = 'SteadyBlock'
--- config.colors = {
---   cursor_bg = '#D4D62F',
---   cursor_fg = 'black',
---   cursor_border = '#D4D62F',
--- }
+config.colors = {
+  cursor_bg = '#CC458A',
+  cursor_fg = 'black',
+  cursor_border = '#CC458A',
+}
 
 -- Font settings for tabs
 config.window_frame = {

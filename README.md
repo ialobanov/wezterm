@@ -28,7 +28,7 @@ wezterm.on('gui-startup', function()
 end)
 
 -- Hide OS panel and disable confirmation for close terminal
-config.window_decorations = "RESIZE"
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_close_confirmation = 'NeverPrompt'
 
 -- Default path

@@ -16,29 +16,14 @@ local wezterm = require 'wezterm'
 local mux = wezterm.mux
 local config = {}
 
--- Colors & perfomance
-config.term = 'xterm-256color'
-config.front_end = 'WebGpu'
-config.webgpu_power_preference = 'HighPerformance'
+-- Set PowerShell as the default shell
+config.default_prog = { 'pwsh', '-NoLogo' }
 
 -- Maximaze on start up
 wezterm.on('gui-startup', function()
   local tab, pane, window = mux.spawn_window {}
   window:gui_window():maximize()
 end)
-
--- Hide OS panel and disable confirmation for close terminal
-config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.window_close_confirmation = 'NeverPrompt'
-
--- Default path
-config.default_cwd = '~'
-
--- Set PowerShell as the default shell
-config.default_prog = { 'pwsh', '-NoLogo' }
-
--- For right paste in different terminals
-config.canonicalize_pasted_newlines = "LineFeed"
 
 -- Set window paddings
 config.window_padding = {
@@ -47,6 +32,13 @@ config.window_padding = {
   top = 16,
   bottom = 6,
 }
+
+-- Hide OS panel and disable confirmation for close terminal
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.window_close_confirmation = 'NeverPrompt'
+
+-- For right paste in different terminals
+config.canonicalize_pasted_newlines = "CarriageReturnAndLineFeed"
 
 -- Font settings
 config.font = wezterm.font 'JetBrainsMono Nerd Font Mono'
@@ -77,19 +69,21 @@ config.color_schemes = {
       "#8bfde1",
       "#f4f2f9",
      },
-     cursor_bg = "#b89bf9",
-     cursor_border = "#b89bf9",
+     cursor_bg = "#D155B1",
+     cursor_border = "#D155B1",
      cursor_fg = "#292a44",
      foreground = "#e8e6ed",
      indexed = {},
      selection_bg = "#663399",
      selection_fg = "#f4f2f9",
+     scrollbar_thumb = 'FFC300',
     },
 }
 
 -- Disable audio notifications
 config.audible_bell = 'Disabled'
 
+-- Keymaps
 -- Select text with the left mouse button and paste with a right-click
 config.mouse_bindings = {
   {
@@ -114,29 +108,6 @@ config.mouse_bindings = {
     action = wezterm.action.OpenLinkAtMouseCursor,
   },
 }
-
-config.wsl_domains = {
-  {
-    name = 'WSL:Ubuntu-24.04.1',
-    distribution = 'Ubuntu-24.04.1',
-    username = 'techadmin',
-  },
-}
-
--- Cursor style and colors
-config.default_cursor_style = 'SteadyBlock'
-config.colors = {
-  cursor_bg = '#CC458A',
-  cursor_fg = 'black',
-  cursor_border = '#CC458A',
-}
-
--- Font settings for tabs
-config.window_frame = {
-  font = require('wezterm').font 'Bahnschrift',
-  font_size = 14,
-}
-
 -- Closes tabs without confirm and add keymap
 config.keys = {
   {
@@ -154,6 +125,20 @@ config.keys = {
     mods = 'CTRL',
     action = wezterm.action.QuitApplication,
   },
+}
+
+config.wsl_domains = {
+  {
+    name = 'WSL:Ubuntu-24.04.1',
+    distribution = 'Ubuntu-24.04.1',
+    username = 'techadmin',
+  },
+}
+
+-- Font settings for tabs
+config.window_frame = {
+  font = require('wezterm').font 'Bahnschrift',
+  font_size = 14,
 }
 
 return config

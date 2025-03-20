@@ -127,14 +127,6 @@ config.keys = {
   },
 }
 
-config.wsl_domains = {
-  {
-    name = 'WSL:Ubuntu-24.04.1',
-    distribution = 'Ubuntu-24.04.1',
-    username = 'ivan',
-  },
-}
-
 -- Font settings for tabs
 config.window_frame = {
   font = require('wezterm').font 'Bahnschrift',

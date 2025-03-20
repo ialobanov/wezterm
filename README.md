@@ -131,7 +131,7 @@ config.wsl_domains = {
   {
     name = 'WSL:Ubuntu-24.04.1',
     distribution = 'Ubuntu-24.04.1',
-    username = 'techadmin',
+    username = 'ivan',
   },
 }
 

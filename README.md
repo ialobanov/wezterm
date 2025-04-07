@@ -38,7 +38,7 @@ config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_close_confirmation = 'NeverPrompt'
 
 -- For right paste in different terminals
-config.canonicalize_pasted_newlines = "None"
+config.canonicalize_pasted_newlines = "LineFeed"
 
 -- Font settings
 config.font = wezterm.font 'JetBrainsMono Nerd Font Mono'

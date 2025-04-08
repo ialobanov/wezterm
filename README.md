@@ -7,7 +7,7 @@ winget install --id wez.wezterm -e --source winget
 ```
 
 ```ps1
-vim .wezterm.lua
+vim $env:USERPROFILE\.wezterm.lua
 ```
 
 ```lua
@@ -15,6 +15,9 @@ vim .wezterm.lua
 local wezterm = require 'wezterm'
 local mux = wezterm.mux
 local config = {}
+
+config.front_end = "WebGpu"
+config.webgpu_power_preference = "HighPerformance"
 
 -- Set PowerShell as the default shell
 config.default_prog = { 'pwsh', '-NoLogo' }
